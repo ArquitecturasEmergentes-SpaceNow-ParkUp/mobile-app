@@ -17,7 +17,9 @@ class AppConstants {
   static const String appVersion = '1.0.0';
 
   // Theme Colors
-  static const int primaryColorValue = 0xFF1605AC;
+  static const int primaryColorValue = 0xFF1605AC; // Azul eléctrico
+  static const int secondaryColorValue = 0xFFFF6B35; // Naranja
+  static const int surfaceColorValue = 0xFFFFFFFF; // Blanco
 
   // Validation
   static const int minPasswordLength = 6;

@@ -99,7 +99,7 @@ class HomeScreen extends StatelessWidget {
         'icon': Icons.history,
         'title': 'Historial',
         'description': 'Revisa tus reservas anteriores',
-        'color': Colors.purple,
+        'color': const Color(0xFF1605AC),
       },
     ];
 

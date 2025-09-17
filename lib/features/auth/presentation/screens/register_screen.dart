@@ -38,7 +38,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
         title: const Text('Registro'),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
-          onPressed: () => context.pop(),
+          onPressed: () => context.go('/login'),
         ),
       ),
       body: SafeArea(
@@ -90,10 +90,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
   Widget _buildHeader() {
     return Column(
       children: [
-        Icon(
-          Icons.person_add,
-          size: 64.w,
-          color: Theme.of(context).primaryColor,
+        Image.asset(
+          'assets/parkup_logo.png',
+          width: 64.w,
+          height: 64.w,
+          fit: BoxFit.contain,
         ),
         SizedBox(height: 16.h),
         Text(

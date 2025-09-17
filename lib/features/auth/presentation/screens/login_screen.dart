@@ -72,10 +72,11 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget _buildHeader() {
     return Column(
       children: [
-        Icon(
-          Icons.local_parking,
-          size: 80.w,
-          color: Theme.of(context).primaryColor,
+        Image.asset(
+          'assets/parkup_logo.png',
+          width: 80.w,
+          height: 80.w,
+          fit: BoxFit.contain,
         ),
         SizedBox(height: 16.h),
         Text(
@@ -182,7 +183,7 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
         ),
         GestureDetector(
-          onTap: () => context.go('/register'),
+          onTap: () => context.push('/register'),
           child: Text(
             'Regístrate aquí',
             style: TextStyle(
